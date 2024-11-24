@@ -1,0 +1,239 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h3 {
+    color: #343a40;
+}
+
+p.lead {
+    font-size: 1.2rem;
+    color: #6c757d;
+    margin-bottom: 15px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #343a40;
+    padding: 15px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #f8f9fa;
+}
+
+.navbar-nav .nav-link {
+    color: #f8f9fa !important;
+    padding: 10px 15px;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff !important;
+    border-radius: 5px;
+}
+
+/* Main Content */
+.container {
+    padding: 30px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #343a40;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.container h3 {
+    font-size: 1.75rem;
+    margin-top: 20px;
+    color: #495057;
+    margin-bottom: 10px;
+}
+
+.container p.lead {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    color: #6c757d;
+    text-align: center;
+}
+
+/* Posts Section (Cards) */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 15px;
+    color: #343a40;
+}
+
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-top: 10px;
+    height: 75px;
+    overflow: hidden;
+}
+
+/* Media Styles (Image and Video) */
+.card-img-top {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Button Styles */
+.card .btn {
+    margin-top: 15px;
+    font-size: 1rem;
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.card .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.card .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        padding: 20px;
+    }
+
+    .card {
+        max-width: 500px;
+    }
+
+    .card-title {
+        font-size: 1.4rem;
+    }
+
+    .card-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .container h1 {
+        font-size: 2rem;
+    }
+
+    .container h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding: 0 15px;
+    }
+
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+    }
+
+    .card .btn {
+        padding: 12px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .card-title {
+        font-size: 1.1rem;
+    }
+
+    .card-text {
+        font-size: 0.85rem;
+    }
+}
